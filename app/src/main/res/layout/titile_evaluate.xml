@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:padding="10dip">
+    <ImageView
+        android:id="@+id/img_evaluate_quit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/row_cancle"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="135dp"
+        android:textSize="20sp"
+        android:text="用户评价"
+        tools:ignore="InvalidId,MissingConstraints" />
+</RelativeLayout>

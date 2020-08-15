@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".init.LoginActivity"
+    android:background="@mipmap/carlogin">
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/title_layout" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="0dp"
+        />
+
+
+   <EditText
+       android:layout_width="280dp"
+       android:layout_height="40dp"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="180dp"
+       android:hint="请输入账户名"
+       android:textSize="15dp"
+       android:background="@drawable/edit"
+       android:id="@+id/et_namelogin"
+       />
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:hint="请输入密码"
+        android:textSize="15dp"
+        android:background="@drawable/edit"
+        android:inputType="textPassword"
+        android:id="@+id/et_psdlogin"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btn_logintype"
+        android:layout_marginTop="30dp"
+        android:text="切换维修员登录"
+        android:textColor="#fff"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/btn2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btn_loginsuccess"
+        android:layout_marginTop="30dp"
+        android:text="登录"
+        android:textColor="#fff"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/btn"
+        />
+</LinearLayout>
+</LinearLayout>

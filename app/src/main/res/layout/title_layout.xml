@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:gravity="center_vertical"
+    android:padding="10dip" >
+
+    <ImageView
+        android:id="@+id/img_loginquit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/back" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="135dp"
+        android:textSize="20sp"
+        android:text="用户登录"
+        tools:ignore="InvalidId" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_signup"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:text="去注册"
+        tools:ignore="InvalidId" />
+</RelativeLayout>

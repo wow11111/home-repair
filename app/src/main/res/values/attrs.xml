@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DatePickerView">
+        <attr name="picker_model" format="string" /><!--模式-->
+    </declare-styleable>
+    <declare-styleable name="BackdropInput">
+        <attr name="input_enable" format="boolean" />
+        <attr name="left_icon" format="reference" />
+        <attr name="input_hint" />
+    </declare-styleable>
+    <declare-styleable name="WithTitleInput">
+        <attr name="input_icon" format="reference" /><!--图标-->
+        <attr name="input_hint" />
+    </declare-styleable>
+    <attr name="input_hint" format="string" /><!--hint-->
+    <declare-styleable name="ItemView">
+        <attr name="style" format="string" />
+        <attr name="text1" format="string" />
+        <attr name="text2" format="string" />
+    </declare-styleable>
+
+    <attr name="cbd_calendar_row" format="integer" />
+
+    <declare-styleable name="CalendarDateView">
+        <attr name="cbd_calendar_row" />
+    </declare-styleable>
+
+    <declare-styleable name="FeatureItemView">
+        <attr name="feature_style" format="string" />
+        <attr name="text_left_hint" format="string" />
+        <attr name="text_left" format="string" />
+        <attr name="text_right_hint" format="string" />
+        <attr name="text_right" format="string" />
+        <attr name="image_right" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SubtitleItemView">
+        <attr name="subtitle_style" format="string" />
+        <attr name="left_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandRcv">
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AirRatingBar">
+        <!--未选中-->
+        <attr name="ratingDefault" format="reference" />
+        <!--选中半个-->
+        <attr name="ratingHalf" format="reference" />
+        <!--选中-->
+        <attr name="ratingSelect" format="reference" />
+        <!--总数-->
+        <attr name="ratingTotalNum" format="integer" />
+        <!--默认选中的数量 -->
+        <attr name="ratingDefaultSelectNum" format="float" />
+        <!--间距-->
+        <attr name="ratingDistance" format="dimension" />
+        <!--宽度-->
+        <attr name="ratingWidth" format="dimension" />
+        <!--高度-->
+        <attr name="ratingHeight" format="dimension" />
+        <!--整个 or 半个-->
+        <attr name="ratingIsFull" format="boolean" />
+        <!--是否可选中-->
+        <attr name="ratingSelectable" format="boolean" />
+    </declare-styleable>
+</resources>

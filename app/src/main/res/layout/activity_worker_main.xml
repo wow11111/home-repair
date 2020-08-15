@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#623DA3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_Title_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tabs_rg" />
+
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/One_tab"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/checkbox_one"
+                android:gravity="center|bottom"
+                android:paddingTop="10dp"
+                android:text="广场"
+                android:textColor="@color/checkbox_textcolor" />
+
+            <RadioButton
+                android:id="@+id/order_tab"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/checkbox_order"
+                android:gravity="center|bottom"
+                android:paddingTop="10dp"
+                android:text="工单"
+                android:textColor="@color/checkbox_textcolor" />
+
+            <RadioButton
+                android:id="@+id/My_tab"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/checkbox_my"
+                android:gravity="center|bottom"
+                android:paddingTop="10dp"
+                android:text="我的"
+                android:textColor="@color/checkbox_textcolor" />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

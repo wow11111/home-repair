@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F7">
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/titile_evaluate" />
+
+    <RelativeLayout
+        android:id="@+id/re_1"
+        android:layout_width="340dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/main_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/im_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FAF7F7"
+            android:src="@mipmap/head4"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/im_1"
+            android:text="维修工工号："
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tw_worker_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_1"
+            android:text="徐磊"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/im_1"
+            android:text="完成时间："
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/te_worker_finish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tw_worker_number"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_2"
+            android:text="2020-06-08 14:45:28"
+            android:textSize="15dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/te_worker_finish_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:button="@null"
+                android:drawableTop="@drawable/checkbox_face1"
+                android:gravity="center|bottom"
+                android:text="非常差"
+                android:textColor="@color/facetext2" />
+
+            <RadioButton
+                android:id="@+id/rb_2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:button="@null"
+                android:drawableTop="@drawable/checkbox_face2"
+                android:gravity="center|bottom"
+                android:text="一般"
+                android:textColor="@color/facetext" />
+
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:button="@null"
+                android:drawableTop="@drawable/checkbox_face3"
+                android:gravity="center|bottom"
+                android:text="很好"
+                android:textColor="@color/facetext" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_2"
+        android:layout_width="340dp"
+        android:layout_height="330dp"
+        android:layout_below="@+id/re_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/im_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/re_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FAF7F7"
+            android:src="@mipmap/head5"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/t3_repair_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/im_2"
+            android:text="【电】" />
+
+        <TextView
+            android:id="@+id/t3_repair_type_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t3_repair_type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/im_2"
+            android:text="【饮水机】" />
+
+        <com.example.repairsystem.ratingbar.RatingBar
+            android:id="@+id/rab_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/im_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:rating="3"
+            android:stepSize="1"
+            app:ratingDefault="@drawable/svg_star_c126"
+            app:ratingDefaultSelectNum="0"
+            app:ratingDistance="4dp"
+            app:ratingIsFull="true"
+            app:ratingSelect="@drawable/svg_star_c201"
+            app:ratingSelectable="true"
+            app:ratingTotalNum="5" />
+
+        <TextView
+            android:id="@+id/tv_ratingbar_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rab_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/et_evaluate"
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/tv_ratingbar_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="#FAF7F7"
+            android:gravity="top|left"
+            android:hint="请给我们努力的工作人员，最真实的反馈！"
+            android:nextFocusLeft="@id/et_evaluate"
+            android:nextFocusUp="@id/et_evaluate"
+            android:padding="5dp"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_send_evaluate"
+        android:layout_width="340dp"
+        android:visibility="gone"
+        android:layout_height="40dp"
+        android:layout_below="@+id/re_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_evaluate"
+        android:text="请评价维修满意度"
+        android:textColor="#fff" />
+</RelativeLayout>
